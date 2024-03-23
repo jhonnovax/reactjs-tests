@@ -74,7 +74,7 @@ export default function ReportAgents() {
 					{reportData.map((report, reportIndex) => (
 						<tr key={reportIndex} className={`${report.propertyStatus === 0 ? "table-success" : ""}`}>
 							<th scope="row">{reportIndex + 1}</th>
-							<td>{new Date(report.date).toDateString()}</td>
+							<td>{formatDate(report.date)}</td>
 							<td>{
 								report.propertyStatus 
 									? <span class="badge text-bg-primary">Active</span>
