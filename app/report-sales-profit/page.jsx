@@ -76,7 +76,6 @@ export default function ReportAgents() {
 					<th>Agent</th>
 					<th># Sold Properties</th>
 					<th class="bg-warning-subtle text-right">Total Commission</th>
-					<th class="bg-success-subtle text-right">Total Sales</th>
 					<th class="bg-success-subtle text-right">Total Profit (Agent Fee)</th>
 					</tr>
 				</thead>
@@ -87,7 +86,6 @@ export default function ReportAgents() {
 							<td>{item.agent}</td>
 							<td>{item.soldProperties}</td>
 							<td className="bg-warning-subtle text-right">{formatCurrency(item.totalCommission)}</td>
-							<td className="bg-success-subtle text-right">{formatCurrency(item.totalSales)}</td>
 							<td className="bg-success-subtle text-right">{formatCurrency(item.totalProfit)}</td>
 						</tr>
 					))}

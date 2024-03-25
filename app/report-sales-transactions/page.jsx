@@ -66,7 +66,6 @@ export default function ReportAgents() {
 					<th scope="col">Status</th>
 					<th scope="col">Agent</th>
 					<th scope="col">Sale Price</th>
-					<th scope="col">Total</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -81,7 +80,6 @@ export default function ReportAgents() {
 							}</td>
 							<td>{report.agent}</td>
 							<td>{formatCurrency(report.soldPrice)}</td>
-							<td>{formatCurrency(report.total)}</td>
 						</tr>
 					))}
 				</tbody>	
